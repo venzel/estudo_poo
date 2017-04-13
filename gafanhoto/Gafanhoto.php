@@ -5,14 +5,13 @@ require_once 'Pessoa.php';
 class Gafanhoto extends Pessoa
 {
     private $login;
-    private $totAssistidos;
+    private $totAssistido;
 
     public function __construct($nome, $idade, $sexo, $login)
     {
         parent::__construct($nome, $idade, $sexo);
         $this->login = $login;
-        $this->totAssistidos = 0;
-
+        $this->totAssistido = 0;
     }
 
     //
@@ -27,19 +26,19 @@ class Gafanhoto extends Pessoa
         $this->login = $login;
     }
 
-    public function getTotAssistidos()
+    public function getTotAssistido()
     {
-        return $this->totAssistidos;
+        return $this->totAssistido;
     }
 
-    public function setTotAssistidos($totAssistidos)
+    public function setTotAssistido($totAssistido)
     {
-        $this->totAssistidos = $totAssistidos;
+        $this->totAssistido = $totAssistido;
     }
 
     //
 
-    public function viuMaisUm() {
-        $this->totAssistidos ++;
+    public function assistirMaisUm() {
+        $this->totAssistido ++;
     }
 }
