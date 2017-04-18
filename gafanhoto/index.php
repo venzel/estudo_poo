@@ -16,21 +16,24 @@
 
         $y = array();
 
-        $y[0] = new Video('Aula gafanhoto 1');
-        $y[1] = new Video('Aula gafanhoto 2');
-        $y[2] = new Video('Aula gafanhoto 3');
+        $y[0] = new Video('Rambo');
+        $y[1] = new Video('Bradok');
+        $y[2] = new Video('Van Dame');
 
         $p = array();
 
-        $p[0] = new Gafanhoto('Marcos', 21, 'm', 'marciano');
+        $p[0] = new Gafanhoto('Marcos', 21, 'm', 'marquinhos');
         $p[1] = new Gafanhoto('Marcela', 22, 'f', 'marcelinha');
         $p[2] = new Gafanhoto('Arnalda', 25, 'f', 'naldinha');
 
         $v = array();
 
-        $v[0] = new Visualizacao($p[0], $y[0]);
-        $v[1] = new Visualizacao($p[1], $y[1]);
-        $v[2] = new Visualizacao($p[2], $y[2]);
+        $v[0] = new Visualizacao($p[0], $y[0]); // Marcos assistiu Rambo
+        $v[1] = new Visualizacao($p[0], $y[1]); // Marcos assistiu Bradok
+
+        $v[0]->avaliar();
+
+        $v[1]->avaliarPorcentagem(85);
 
         print_r($v);
 

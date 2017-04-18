@@ -15,8 +15,8 @@ class Visualizacao
     {
         $this->espectador = $espectador;
         $this->filme = $filme;
-        $this->filme->setViews();
-        //$this->espectador->setTotAssistido($this->espectador->getTotAssistido() +  1);
+        $this->filme->setViews($this->filme->getViews() + 1);
+        $this->espectador->setTotAssistido($this->espectador->getTotAssistido() +  1);
     }
 
     //
@@ -42,5 +42,37 @@ class Visualizacao
     }
 
     //
+
+    public function avaliar() {
+        $this->filme->setAvaliacao(5);
+    }
+
+    public function avaliarNota($n) {
+        $this->filme->setAvaliacao($n);
+    }
+
+    public function avaliarPorcentagem($p) {
+
+        /*
+        if ($p <= 20)
+            $nova = 3;
+        elseif ($p <= 50)
+            $nova = 5;
+        elseif ($p <= 90)
+            $nova = 5;
+        else
+            $nova = 10;
+        */
+
+        switch ($p) {
+            case $p <= 20 : $nova = 3; break;
+            case $p <= 50 : $nova = 5; break;
+            case $p <= 90 : $nova = 8; break;
+            default : $nova = 10;
+        }
+
+        $this->filme->setAvaliacao($nova);
+
+    }
 
 }
