@@ -23,7 +23,7 @@
                     break;
 
                 default :
-                    $pizza = new PizzaMussarela();
+                    $pizza = new PizzaQueijo();
 
             }
 

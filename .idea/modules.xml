@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/fabrica/.idea/fabrica.iml" filepath="$PROJECT_DIR$/fabrica/.idea/fabrica.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/poo.iml" filepath="$PROJECT_DIR$/.idea/poo.iml" />
     </modules>
   </component>

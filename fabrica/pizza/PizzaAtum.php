@@ -1,6 +1,6 @@
 <?php
 
-    class PizzaQueijo
+    class PizzaAtum
     {
 
         private $ingredientes;

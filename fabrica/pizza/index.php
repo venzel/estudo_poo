@@ -15,7 +15,15 @@
 
     $c = new Cliente();
 
-    print_r($c->ordemPizza('queijo'));
+    $i = $c->pedirPizza('calabresa');
+
+    $i->setIngredientes('Calabresa + Borda de catupiri');
+
+    $pizza = $i->ingredientes();
+
+    echo $pizza;
+
+
 
 ?>
 </pre>

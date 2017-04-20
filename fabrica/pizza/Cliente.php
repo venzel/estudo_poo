@@ -2,6 +2,7 @@
 
     require_once 'FabricaPizza.php';
     require_once 'PizzaQueijo.php';
+    require_once 'PizzaCalabresa.php';
 
     class Cliente {
 
@@ -16,7 +17,7 @@
 
         //
 
-        public function ordemPizza($nomePizza)
+        public function pedirPizza($nomePizza)
         {
 
             $pizza = null;
