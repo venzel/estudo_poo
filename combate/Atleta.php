@@ -1,6 +1,6 @@
 <?php
 
-    class Lutador
+    class Atleta
     {
 
         private $apelido;

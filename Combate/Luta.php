@@ -1,6 +1,6 @@
 <?php
 
-    require_once 'Lutador.php';
+    require_once 'Atleta.php';
 
     class Luta
     {

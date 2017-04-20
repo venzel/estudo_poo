@@ -11,12 +11,12 @@
 <pre>
 <?php
 
-    require_once 'Lutador.php';
+    require_once 'Atleta.php';
     require_once 'Luta.php';
 
     $l = array();
 
-    $l[0] = new Lutador(
+    $l[0] = new Atleta(
                 'Brejeira',
                 'Pablício',
                 'Brasil',
@@ -28,7 +28,7 @@
                 0   // empates
             );
 
-    $l[1] = new Lutador(
+    $l[1] = new Atleta(
         'Recruta',
         'Rauni',
         'Japão',

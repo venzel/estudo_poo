@@ -10,21 +10,21 @@
     <pre>
     <?php
 
-        require_once 'Video.php';
         require_once 'Gafanhoto.php';
+        require_once 'Video.php';
         require_once 'Visualizacao.php';
-
-        $y = array();
-
-        $y[0] = new Video('Rambo');
-        $y[1] = new Video('Bradok');
-        $y[2] = new Video('Van Dame');
 
         $p = array();
 
         $p[0] = new Gafanhoto('Marcos', 21, 'm', 'marquinhos');
         $p[1] = new Gafanhoto('Marcela', 22, 'f', 'marcelinha');
         $p[2] = new Gafanhoto('Arnalda', 25, 'f', 'naldinha');
+
+        $y = array();
+
+        $y[0] = new Video('Rambo');
+        $y[1] = new Video('Bradok');
+        $y[2] = new Video('Van Dame');
 
         $v = array();
 
@@ -35,7 +35,7 @@
 
         $v[1]->avaliarPorcentagem(85);
 
-        print_r($v);
+        print_r($v[0]);
 
     ?>
     </pre>
